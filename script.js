@@ -1,4 +1,5 @@
 // Conectar informações do botão desenvolvido no arquivo HTML
+let botao = document.getElementById("botao-topo")
 
 // Função nativa do windows chamada onscroll ao scrollar, armazena a função chamada scrollFunction(), que define quando o botão deve aparecer
 window.onscroll = function scrollFunction () {
@@ -15,5 +16,6 @@ window.onscroll = function scrollFunction () {
 
 // Quando a pessoa clicar em voltar para o topo, executar esta função
 function voltarParaTopo () {
+  document.documentElement.scrollTop = 0
 }
 
